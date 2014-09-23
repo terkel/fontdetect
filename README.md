@@ -1,6 +1,6 @@
 # FontDetect
 
-Detect if the specific fonts are installed. Does not support IE 8 and below.
+Detect if the specific fonts are installed, and add classes to the `html` element. Does not support IE 8 and below.
 
 ## Usage
 
