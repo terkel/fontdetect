@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FontDetect</title>
+<style>
+html::after {
+    content: attr(class);
+    display: block;
+    font-family: monospace;
+    margin: 1em;
+}
+</style>
+</head>
+<body>
+
+<script src="./fontdetect.js"></script>
+<script>
+FontDetect.test('gillsans', 'Gill Sans');
+
+FontDetect.test('Segoe UI');
+
+FontDetect.test('palatino', [ 'Palatino', 'Palatino Linotype' ]);
+
+FontDetect.test({
+    meiryo: 'Meiryo',
+    mincho: [ 'Hiragino Mincho ProN', 'Yu Mincho', 'YuMincho' ]
+});
+</script>
+
+</body>
+</html>
