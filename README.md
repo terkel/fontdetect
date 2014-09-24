@@ -1,6 +1,11 @@
 # FontDetect
 
-Detect if the specific fonts are installed, and add classes to the `html` element. Does not support IE 8 and below.
+Detect if the specific fonts are installed, and add classes to the `html` element.
+
+Inspired by:
+
+- http://jsdo.it/mayuki/qAvH
+- https://plus.google.com/113463921353776506005/posts/Yf1xtgKchFm
 
 ## Usage
 
@@ -26,3 +31,7 @@ Detect if the specific fonts are installed, and add classes to the `html` elemen
 Result:
 
     <html class=" gillsans no-segoeui palatino no-meiryo mincho">
+
+## Browser support
+
+- Does not support IE 8 and below
