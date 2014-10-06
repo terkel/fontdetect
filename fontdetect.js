@@ -1,5 +1,5 @@
 /*!
- * FontDetect v0.1.0
+ * FontDetect v0.1.1
  * https://github.com/terkel/fontdetect
  *
  * Copyright (c) 2014 Takeru Suzuki - http://terkel.jp/
