@@ -83,7 +83,8 @@ var FontDetect = FontDetect || (function () {
                         }
                         test = isFontAvailable(familyName);
                     }
-                    addHTMLClass(slug, test);
+                    document.documentElement.className += (test? ' ': ' no-') + slug;
+                    FontDetect[slug] = test;
                 }
             }
         }
@@ -94,10 +95,6 @@ var FontDetect = FontDetect || (function () {
             result = testNode.offsetWidth > 0;
             testNode.style.fontFamily = 'A0';
             return result;
-        }
-
-        function addHTMLClass (slug, test) {
-            document.documentElement.className += (test? ' ': ' no-') + slug;
         }
 
         return this;
